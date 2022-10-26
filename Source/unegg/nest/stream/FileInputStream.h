@@ -12,6 +12,11 @@
 #ifndef NEST_STREAM_FILEINPUTSTREAM_H_
 #define NEST_STREAM_FILEINPUTSTREAM_H_
 
+#ifdef __APPLE__
+#define fseeko64 fseeko
+#define ftello64 ftello
+#endif
+
 #include <string>
 #include <nest/stream/InputStream.h>
 

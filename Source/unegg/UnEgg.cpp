@@ -22,6 +22,10 @@
 #include <io.h>
 #endif
 
+#ifdef __APPLE__
+#include <unistd.h>
+#endif
+
 #include "CommandLine.h"
 #include "EventHandler.h"
 #include <nest/format/EggFormatFactory.h>
